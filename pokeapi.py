@@ -1,4 +1,4 @@
-nombre = "pikachu"
+nombre = input("Ingresa el nombre del Pokémon que deseas consultar: ").lower()
 url = f"https://pokeapi.co/api/v2/pokemon/{nombre}"
  
 respuesta = requests.get(url, timeout=10)
